@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NoteKeeper</title>
+  <meta name="viewport"content="width=device-width, initial-scale=1.0"> 
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      
+      background-color: black;
+    }
+
+    .container {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    .link {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 10px 6px;
+    }
+   .links a:hover{
+     opacity: 0.8;
+     scale: 0.93;
+   }
+    .video-section {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+    
+    }
+    video{
+      height: auto;
+      width: 100%;
+      
+    }
+.title{
+  font-size: 2rem;
+  display: flex
+  font-family: Sans-Serif;
+}
+.title h3{ 
+  color: white;
+}
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title"> <h3>Siddhant Singh ™</h3></div>
+    <div class="links">
+      <a target="_blank" class="link" href="https://instagram.com/siddhantsingh1230">Follow</a>
+      <a target="_blank" class="link" href="https://siddhantsingh1230.github.io/NoteKeeper/">GitHub</a>
+      <a target="_blank" class="link" href="https://www.linkedin.com/in/siddhantsingh1230">LinkedIn</a>
+    </div>
+
+    <div class="video-section">
+     
+        <video muted id="vid" loop autoplay="true" >
+          <source src="vid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      <
+    </div>
+  </div>
+  <script>
+  vid.muted=true;
+    document.getElementById('vid').play();
+</script>
+</body>
+</html>
